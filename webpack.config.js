@@ -31,6 +31,10 @@ module.exports = {
                     name: '[name].[ext]',
                     limit: 1077532
                 }
+            },
+            {
+                test: /\.css$/,
+                use: ['style-loader', 'css-loader']
             }
         ]
     },
