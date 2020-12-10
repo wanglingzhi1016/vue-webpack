@@ -3,6 +3,8 @@
 </template>
 
 <script>
+import img from './assets/images/bg.jpg'
+import './assets/images/small.png'
 export default {
   name: 'App'
 }
