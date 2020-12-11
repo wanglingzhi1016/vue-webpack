@@ -1,5 +1,7 @@
 <template>
-  <div>this is App</div>
+  <div>
+    <h1>this is App</h1>
+  </div>
 </template>
 
 <script>
@@ -16,5 +18,6 @@ export default {
 body div {
   font-size: 40px;
   color: blue;
+  transform: translate(100px, 100px);
 }
 </style>
