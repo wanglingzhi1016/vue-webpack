@@ -44,6 +44,12 @@ module.exports = {
             }
         ]
     },
+    devServer: {
+        // 指定服务器根目录
+        contentBase: './dist',
+        // 自动打开浏览器
+        open: true
+    },
     plugins: [
         // 请确保引入这个插件！
         new VueLoaderPlugin(),

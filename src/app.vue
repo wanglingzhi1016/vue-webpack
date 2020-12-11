@@ -17,7 +17,7 @@ export default {
 <style lang="less" scoped>
 body div {
   font-size: 40px;
-  color: blue;
+  color: white;
   transform: translate(100px, 100px);
 }
 </style>
