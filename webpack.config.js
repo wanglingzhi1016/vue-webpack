@@ -48,7 +48,9 @@ module.exports = {
         // 指定服务器根目录
         contentBase: './dist',
         // 自动打开浏览器
-        open: true
+        open: true,
+        // 启用热模块替换
+        hot: true
     },
     plugins: [
         // 请确保引入这个插件！
