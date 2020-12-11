@@ -8,6 +8,7 @@ module.exports = {
     mode: 'development',
     // 打包入口
     entry: './src/main.js',
+    devtool: 'eval-source-map',
     // 打包出口
     output: {
         filename: 'bundle.js',

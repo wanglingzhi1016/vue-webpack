@@ -5,16 +5,21 @@
   <ul>
     <li v-for="(item, index) in arr" :key="index">{{item}}</li>
   </ul>
+  <componentA />
 </div>
 </template>
 
 <script>
 // import img from './assets/images/bg.jpg'
 // import './assets/images/small.png'
-import './assets/styles/index.less'
+import './assets/styles/index.less';
+import componentA from './components/componentA.vue';
 
 export default {
   name: 'App',
+  components: {
+    componentA
+  },
   data() {
     return {
       arr: [1, 2, 3],
@@ -23,6 +28,7 @@ export default {
   },
   methods: {
     onAdd() {
+      console.log(as)
       if (!this.value) return
       this.arr.push(this.value)
     }
