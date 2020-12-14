@@ -40,12 +40,4 @@ export default {
 </script>
 
 <style lang="less" scoped>
-body li {
-  font-size: 40px;
-  color: white;
-  transform: translate(100px, 100px);
-}
-div {
-  margin: 40px;
-}
 </style>

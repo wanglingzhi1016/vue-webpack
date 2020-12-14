@@ -19,7 +19,7 @@ module.exports = {
                 loader: 'vue-loader'
             },
             {
-                test: /\.(jpg|jpeg|png|svg)$/,
+                test: /\.(jpg|jpeg|png|svg|eot|svg|ttf|woff|woff2)$/,
                 loader: 'file-loader',
                 options: {
                     name: '[name].[ext]'
