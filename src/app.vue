@@ -29,6 +29,9 @@ export default {
   methods: {
     onAdd() {
       // console.log(as)
+      const a = '11'
+      const b = '23'
+      console.log(`${a}ad`)
       if (!this.value) return
       this.arr.push(this.value)
     }
