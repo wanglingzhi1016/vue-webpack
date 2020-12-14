@@ -28,7 +28,7 @@ export default {
   },
   methods: {
     onAdd() {
-      console.log(as)
+      // console.log(as)
       if (!this.value) return
       this.arr.push(this.value)
     }

@@ -5,14 +5,12 @@ const HtmlWebpackPlugin = require('html-webpack-plugin');
 const {CleanWebpackPlugin} = require('clean-webpack-plugin');
 
 module.exports = {
-    mode: 'development',
     // 打包入口
     entry: './src/main.js',
-    devtool: 'eval-source-map',
     // 打包出口
     output: {
-        filename: 'bundle.js',
-        path: path.resolve(__dirname, 'dist')
+        filename: 'app.js',
+        path: path.resolve(__dirname, '../dist')
     },
     module: {
         rules: [
@@ -44,14 +42,6 @@ module.exports = {
                 use: ['style-loader', 'css-loader', 'postcss-loader', 'less-loader']
             }
         ]
-    },
-    devServer: {
-        // 指定服务器根目录
-        contentBase: './dist',
-        // 自动打开浏览器
-        open: true,
-        // 启用热模块替换
-        hot: true
     },
     plugins: [
         // 请确保引入这个插件！
