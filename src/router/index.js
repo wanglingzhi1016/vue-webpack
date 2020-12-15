@@ -8,6 +8,11 @@ Vue.use(VueRouter);
 export default new VueRouter({
     routes: [
         {
+            path: '*',
+            redirect: '/pageOne',
+            component: PageOne
+        },
+        {
             path: '/pageOne',
             name: 'pageOne',
             component: PageOne

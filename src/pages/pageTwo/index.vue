@@ -1,6 +1,9 @@
 <template>
 <div>
   我是pageTwo页面
+  <br />
+  <br />
+  <el-button @click="onClick" type="primary">Go to pageOne</el-button>
 </div>
 </template>
 
@@ -11,10 +14,12 @@ export default {
     return {
     }
   },
-  created() {
-      console.log('2222222222')
-  },
   methods: {
+    onClick() {
+      this.$router.push({
+        name: 'pageOne'
+      })
+    }
   }
 }
 </script>
